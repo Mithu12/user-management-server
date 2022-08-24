@@ -16,7 +16,7 @@ app.use(dbRoutes)
 app.use('/api/users', userRoutes)
 
 const __dirname = path.resolve()
-app.use(express.static(path.join(__dirname, 'uploads')))
+app.use(express.static(path.join(__dirname, './uploads')))
 
 
 app.use(notFound)
